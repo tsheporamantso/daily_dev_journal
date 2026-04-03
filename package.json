@@ -2,7 +2,7 @@
   "name": "daily_dev_journal",
   "version": "1.0.0",
   "description": "Automated daily journal, documenting my journey as a developer.",
-  "main": "./scripts/generateLog.js",
+  "main": "index.js",
   "scripts": {
     "start": "node script/generateLog.js"
   },
