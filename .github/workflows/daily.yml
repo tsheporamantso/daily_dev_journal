@@ -1,0 +1,33 @@
+name: Daily Dev Journal
+
+on:
+  schedule:
+    - cron: "0 8 * * *" # every day at 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate Log
+        run: node scripts/generateLog.js
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name "Auto Bot"
+          git config --global user.email "bot@example.com"
+          git add .
+          git commit -m "📘 Daily dev journal update" || echo "No changes"
+          git push
