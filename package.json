@@ -4,7 +4,7 @@
   "description": "Automated daily journal, documenting my journey as a developer.",
   "main": "./scripts/generateLog.js",
   "scripts": {
-    "start": "nodemon script/generateLog.js"
+    "start": "node script/generateLog.js"
   },
   "keywords": [],
   "author": "",
