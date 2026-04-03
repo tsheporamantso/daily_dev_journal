@@ -1,0 +1,12 @@
+{
+  "name": "daily_dev_journal",
+  "version": "1.0.0",
+  "description": "Automated daily journal, documenting my journey as a developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
