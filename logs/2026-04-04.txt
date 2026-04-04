@@ -1,0 +1,13 @@
+# Dev Log - 2026-04-04
+
+## 🚀 What I Learned Today
+- Placeholder (you can later automate or expand this)
+
+## 🧠 Notes
+- Consistency beats intensity.
+
+## 🔧 Improvements
+- Add real API integration later
+
+---
+Generated automatically
